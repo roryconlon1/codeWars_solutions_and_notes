@@ -1,5 +1,8 @@
 // function disemvowel(str) {
 //     return str.replace(/[aeiou]/gi, '')
+
+//replace method takes in whatever is in [] (although not in quotes), global = g, upper/lowe = i
+//and 2nd argument is what its being replaced with, in this case being removed so empty string
 //   }
 
 // module.exports = disemvowel;
