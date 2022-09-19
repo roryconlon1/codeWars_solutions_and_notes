@@ -40,26 +40,41 @@
 // }
 // console.log(simpleMultiplication(2));
 
-function solution(str) {
-    return (str+"_").match(/../g)||[]
+// function solution(str) {
+//     return (str + "_").match(/../g) || []
 
     // will only work for 2 places, same with .{2}, however {1,2} will work fro minimum of one and max 2.
     //g is global, can add i for upper and lower case.  || [] gives an empty array if an empty string rather than returning null
     //so _ is added every time and will only be added on if it is odd, as it needs 2 elements so will be omitted if even.
-    
+
     //function solution(str) {
-//     if (str.length == 0) {
-//         return []
-//     };
+    //     if (str.length == 0) {
+    //         return []
+    //     };
 
-//     return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
-// }
+    //     return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
+    // }
 
-//same thing, setting if 0 to an empty string.
-//checking if its even, if so saying str calling match function to 2 places
-//otherwise calling string + _ and calling same function which will add _ after last 
-//character of string and work correctly.
+    //same thing, setting if 0 to an empty string.
+    //checking if its even, if so saying str calling match function to 2 places
+    //otherwise calling string + _ and calling same function which will add _ after last 
+    //character of string and work correctly.
 }
 
-console.log(solution('hellos'));
+// console.log(solution('hellos'));
+
+// function makeNegative(num) {
+//     return (num < 0 ? num: -num)
+// }
+
+// console.log(makeNegative(5));
+
+// function betterThanAverage(classPoints, yourPoints) {
+//     return (classPoints.reduce((a, b) => a + b, 0) / classPoints.length) >= yourPoints ? false : true;
+// }
+
+// module.exports = betterThanAverage;
+
+
+
 
