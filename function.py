@@ -1,19 +1,19 @@
-# def spin_words(sentence):
+def spin_words(sentence):
 
-#     split_sentence = sentence.split(' ')
-#     results = []
+    split_sentence = sentence.split(' ')
+    results = []
 
-#     for word in split_sentence:
-#         if len(word) >= 4:
-#             results.append(word[::-1])
-#         else:
-#             results.append(word)
+    for word in split_sentence:
+        if len(word) >= 4:
+            results.append(word[::-1])
+        else:
+            results.append(word)
 
-#     return ' '.join(results)
+    return ' '.join(results)
 
 import math
 
-# print(spin_words('Welcome all to python3'))
+print(spin_words('Welcome all to python3'))
 
 
 def is_square(n):
@@ -28,10 +28,10 @@ def is_square(n):
 
 print(is_square(25))
 
-function solution(str) {
-    if (str.length == 0) {
-        return []
-    };
 
-    return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
-}
+def bool_to_word(boolean):
+    if boolean == True:
+        return 'Yes'
+    return 'No'
+
+print(bool_to_word(True))

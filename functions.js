@@ -47,19 +47,19 @@
     //g is global, can add i for upper and lower case.  || [] gives an empty array if an empty string rather than returning null
     //so _ is added every time and will only be added on if it is odd, as it needs 2 elements so will be omitted if even.
 
-    //function solution(str) {
-    //     if (str.length == 0) {
-    //         return []
-    //     };
+    function solution(str) {
+        if (str.length == 0) {
+            return []
+        };
 
-    //     return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
-    // }
+        return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
+    }
 
     //same thing, setting if 0 to an empty string.
     //checking if its even, if so saying str calling match function to 2 places
     //otherwise calling string + _ and calling same function which will add _ after last 
     //character of string and work correctly.
-}
+// }
 
 // console.log(solution('hellos'));
 
