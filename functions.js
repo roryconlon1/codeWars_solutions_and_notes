@@ -75,6 +75,8 @@
 
 // module.exports = betterThanAverage;
 
+
+//to find smallest integer in array of ints
 class SmallestIntegerFinder {
     findSmallestInt(args) {
       let min = Math.min(...args)
