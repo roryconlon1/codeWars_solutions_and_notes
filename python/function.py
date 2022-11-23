@@ -35,3 +35,6 @@ def bool_to_word(boolean):
     return 'No'
 
 print(bool_to_word(True))
+
+def greet(name):
+    return "Hello, " + name + " how are you doing today?"
