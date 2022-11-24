@@ -38,3 +38,21 @@ print(bool_to_word(True))
 
 def greet(name):
     return "Hello, " + name + " how are you doing today?"
+
+# dictionary of numbers and get number as argument and get the written version by its key
+def switch_it_up(number):
+    list_of_nums = {
+        0: "Zero",
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five",
+        6: "Six",
+        7: "Seven", 
+        8: "Eight", 
+        9: "Nine"
+    }
+    return list_of_nums.get(number)
+
+print(switch_it_up(1))
