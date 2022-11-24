@@ -43,22 +43,22 @@
 // function solution(str) {
 //     return (str + "_").match(/../g) || []
 
-    // will only work for 2 places, same with .{2}, however {1,2} will work fro minimum of one and max 2.
-    //g is global, can add i for upper and lower case.  || [] gives an empty array if an empty string rather than returning null
-    //so _ is added every time and will only be added on if it is odd, as it needs 2 elements so will be omitted if even.
+// will only work for 2 places, same with .{2}, however {1,2} will work fro minimum of one and max 2.
+//g is global, can add i for upper and lower case.  || [] gives an empty array if an empty string rather than returning null
+//so _ is added every time and will only be added on if it is odd, as it needs 2 elements so will be omitted if even.
 
-    function solution(str) {
-        if (str.length == 0) {
-            return []
-        };
+function solution(str) {
+    if (str.length == 0) {
+        return []
+    };
 
-        return (str.length % 2 == 0? str: str + '_' ).match(/../gi);
-    }
+    return (str.length % 2 == 0 ? str : str + '_').match(/../gi);
+}
 
-    //same thing, setting if 0 to an empty string.
-    //checking if its even, if so saying str calling match function to 2 places
-    //otherwise calling string + _ and calling same function which will add _ after last 
-    //character of string and work correctly.
+//same thing, setting if 0 to an empty string.
+//checking if its even, if so saying str calling match function to 2 places
+//otherwise calling string + _ and calling same function which will add _ after last 
+//character of string and work correctly.
 // }
 
 // console.log(solution('hellos'));
@@ -79,11 +79,24 @@
 //to find smallest integer in array of ints
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      let min = Math.min(...args)
-      return min;
+        let min = Math.min(...args)
+        return min;
     }
-  }
+}
 
+//given mnonth as int return which quarter of the year it is in
+const quarterOf = (month) => {
+    if (month < 4){
+        return 1
+    }
+    else if (month > 3 && month < 7){
+        return 2
+    }
+    else if (month > 6 && month < 10){
+        return 3
+    }
+    return 4
+}
 
 
 
