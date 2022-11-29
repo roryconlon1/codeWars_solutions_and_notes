@@ -64,7 +64,7 @@ def switch_it_up(number):
 
 print(switch_it_up(1))
 
-
+# take 2 argument and return first multiples of n multiples of x
 def count_by(x, n):
     new_list = []
     for i in range(n):
