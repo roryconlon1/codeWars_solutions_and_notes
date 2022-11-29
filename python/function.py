@@ -1,3 +1,6 @@
+import math
+
+
 def spin_words(sentence):
 
     split_sentence = sentence.split(' ')
@@ -11,7 +14,6 @@ def spin_words(sentence):
 
     return ' '.join(results)
 
-import math
 
 print(spin_words('Welcome all to python3'))
 
@@ -34,12 +36,16 @@ def bool_to_word(boolean):
         return 'Yes'
     return 'No'
 
+
 print(bool_to_word(True))
+
 
 def greet(name):
     return "Hello, " + name + " how are you doing today?"
 
 # dictionary of numbers and get number as argument and get the written version by its key
+
+
 def switch_it_up(number):
     list_of_nums = {
         0: "Zero",
@@ -49,10 +55,21 @@ def switch_it_up(number):
         4: "Four",
         5: "Five",
         6: "Six",
-        7: "Seven", 
-        8: "Eight", 
+        7: "Seven",
+        8: "Eight",
         9: "Nine"
     }
     return list_of_nums.get(number)
 
+
 print(switch_it_up(1))
+
+
+def count_by(x, n):
+    new_list = []
+    for i in range(n):
+        new_list.append((i+1) * x)
+    return new_list
+
+
+print(count_by(2, 5))
