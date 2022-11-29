@@ -74,6 +74,7 @@ def count_by(x, n):
 
 print(count_by(2, 5))
 
+# take number n and return array of each number and reverse array
 def digitize(n):
     res = list(map(int, str(n)))
     return list(reversed(res))
