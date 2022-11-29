@@ -73,3 +73,9 @@ def count_by(x, n):
 
 
 print(count_by(2, 5))
+
+def digitize(n):
+    res = list(map(int, str(n)))
+    return list(reversed(res))
+
+print(digitize(12345))
