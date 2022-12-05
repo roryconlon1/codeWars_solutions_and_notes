@@ -65,6 +65,8 @@ def switch_it_up(number):
 print(switch_it_up(1))
 
 # take 2 argument and return first multiples of n multiples of x
+
+
 def count_by(x, n):
     new_list = []
     for i in range(n):
@@ -75,8 +77,28 @@ def count_by(x, n):
 print(count_by(2, 5))
 
 # take number n and return array of each number and reverse array
+
+
 def digitize(n):
     res = list(map(int, str(n)))
     return list(reversed(res))
 
+
 print(digitize(12345))
+
+
+def count_sheeps(sheep):
+    count = 0
+    for s in sheep:
+        if s == True:
+            count += 1
+    return count
+
+
+array1 = [True,  True,  True,  False,
+          True,  True,  True,  True,
+          True,  False, True,  False,
+          True,  False, False, True,
+          True,  True,  True,  True,
+          False, False, True,  True]
+print(count_sheeps(array1))
