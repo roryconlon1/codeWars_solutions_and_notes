@@ -86,13 +86,13 @@ class SmallestIntegerFinder {
 
 //given mnonth as int return which quarter of the year it is in
 const quarterOf = (month) => {
-    if (month < 4){
+    if (month < 4) {
         return 1
     }
-    else if (month > 3 && month < 7){
+    else if (month > 3 && month < 7) {
         return 2
     }
-    else if (month > 6 && month < 10){
+    else if (month > 6 && month < 10) {
         return 3
     }
     return 4
@@ -105,16 +105,24 @@ function sentence(country, weather) {
 console.log(sentence("Scotland", "rain"));
 
 
-function SeriesSum(n)
-{
+function SeriesSum(n) {
     let total = 0;
-    for (let i =0; i < n ; i++){
-        total += 1/(1+i*3);
+    for (let i = 0; i < n; i++) {
+        total += 1 / (1 + i * 3);
     }
     return total.toFixed(2)
 }
 console.log(SeriesSum(4));
 
+function getAge(inputString) {
+    let newArr = [];
+    for (letter of inputString) {
+        newArr.push(letter)
+    }
+    return parseInt(newArr[0])
+}
+
+console.log(getAge("4 year old"));
 
 
 
