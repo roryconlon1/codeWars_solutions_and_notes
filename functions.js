@@ -98,5 +98,24 @@ const quarterOf = (month) => {
     return 4
 }
 
+function sentence(country, weather) {
+    return `The weather in ${country} is ${weather}.`
+}
+
+console.log(sentence("Scotland", "rain"));
+
+
+function SeriesSum(n)
+{
+    let total = 0;
+    for (let i =0; i < n ; i++){
+        total += 1/(1+i*3);
+    }
+    return total.toFixed(2)
+}
+console.log(SeriesSum(4));
+
+
+
 
 
