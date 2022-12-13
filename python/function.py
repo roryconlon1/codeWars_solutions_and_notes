@@ -102,3 +102,16 @@ array1 = [True,  True,  True,  False,
           True,  True,  True,  True,
           False, False, True,  True]
 print(count_sheeps(array1))
+
+
+def number(lines):
+    my_arr = []
+    total = 0
+    # make total of 0 so that every iteration can add 1 and use it as the number of the element in the list
+    for letter in lines:
+        total += 1
+        my_arr.append(f'{total}: {letter}')
+    return my_arr
+
+
+print(number(["a", "b", "c", "d", "e", "f", "g", "h", "i", "h"]))
